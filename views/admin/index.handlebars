@@ -1,0 +1,14 @@
+
+<div class = "card mt-3">
+    <div class = "card-body">
+        <form action="/converter" method = "POST">
+            <p>Digite um número</p>
+            <br>
+            <input type="text" name = "numero">
+            <button type = "submit">Converter</button>
+        </form>
+    </div>
+</div>
+{{#each resposta}}
+    {{texto.NumberToWordsResult}}
+{{/each}}
